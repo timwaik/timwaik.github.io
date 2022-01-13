@@ -1,32 +1,628 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en-UK">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi, my name is Tim Wai. Welcome to my site">
-    <meta name="keywords" content="data, analytics, enthusiast, engineer, tim, khoo, wai, malaysia, manchester">
-    <meta name="theme-color" content="#b0d0d3">
-    <link rel="canonical" href="https://timkhoo.com">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    </style>
-    <title>Tim Wai Khoo</title>
+  <title>Tim Wai Khoo | Data Engineer</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Khoo Tim Wai">
+  <meta name="description" content="My name is Tim Wai and I am a data analyst with almost 3 years of experience">
+  <meta name="keywords"
+    content="Tim, Wai, Khoo, timkhoo, timwaikhoo, timwai, data, analyst, malaysia, manchester, kl, kuala lumpur, engineer">
+  <meta name="viewport" content="width=device_width, height=device_height, initial-scale=1.0">
+  <meta name="theme-color" content="#b0d0d3">
+  <link rel="stylesheet" href="css/PersProj1.css">
+  <link rel="icon" href="images/favicon_io/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  </style>
+
 </head>
 
 <body>
-    <div class="empty1"></div>
-    <div class="main">
-        <h1>Hi There</h1>
-        <h3>Thanks for visiting my site! Unfortunately, its still under construction. Do check again in the near future!
-        </h3>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#Homediv" onclick="closeNav()">Home</a>
+      <a href="#HelloWorlddiv" onclick="closeNav()">Hello World!</a>
+      <a href="#AboutMediv" onclick="closeNav()">About Me</a>
+      <a href="#Projectsdiv" onclick="closeNav()">Personal Projects</a>
+      <a href="#Skillsdiv" onclick="closeNav()">Skills</a>
+      <a href="#Gallerydiv" onclick="closeNav()">Gallery</a>
+      <a href="#Lastlydiv" onclick="closeNav()">Lastly..</a>
     </div>
-    <div class="footer">Alternatively, you could reach out to me now at <a
-            href="mailto:hello@timkhoo.com">hello@timkhoo.com</a></div>
+  </div>
 
+  <div id="navburger">
+    <span class="linktop" onclick="openNav()">
+      <img class="imagelinktop" src="images/iconmonstr-menu-1-120.png" alt="Tim Wai's Email"></span>
+  </div>
+  <div id="Homediv" class="header fade-in">
+    <h1 id="name">{Tim Wai Khoo}</h1>
+    <h2 id="descriptor"><span id="descriptors"></span></h2>
+
+    <a style="text-decoration: none;" href="documents/webcv_tim_wai_khoo.pdf" target="_blank"><button
+        id="resumebutton">Resume</button></a>
+
+    <div id="linktoplist">
+      <a class="linktop" href="mailto:hello@timkhoo.com">
+        <img class="imagelinktop" src="images\iconmonstr-email-1-120.png" alt="Tim Wai's Email"></a>
+      <a class="linktop" href="https://www.linkedin.com/in/timwaik/" target="_blank">
+        <img class="imagelinktop" src="images\iconmonstr-linkedin-3-120.png" alt="Tim Wai's Linkedin"></a>
+      <a class="linktop" href="https://github.com/timwaik" target="_blank">
+        <img class="imagelinktop" src="images\iconmonstr-github-1-120.png" alt="Tim Wai's Github"></a>
+      <a class="linktop" href="https://medium.com/@timwaik" target="_blank">
+        <img class="imagelinktop" src="images\iconmonstr-medium-1-120.png" alt="Tim Wai's Medium"></a>
+    </div>
+
+
+  </div>
+
+  <div id="HelloWorlddiv" class="sub-header row slide-in from-left">
+    <div class="columnlarger fade-in">
+      <h2 id="helloworld">Hello World!</h2>
+      <p><b> My name is Tim Wai, but you can just call me Tim for short.</b></p>
+      <p>Welcome to my webpage! It was made entirely from scratch by me, using a little HTML, CSS, Javascript and
+        some
+        good ol' fashioned <span id="googleanimation"></span>
+      </p>
+      <p style="margin-top: 4vh;"> <u>Reasons this site exists:</u> </p>
+      <ol>
+        <li>
+          <p>A place for me to showcase my professional work and personal projects</p>
+        </li>
+        <li>
+          <p>Gain some hands-on experience in front-end web development</p>
+        </li>
+        <li>
+          <p>A place to share a personal side of me</p>
+        </li>
+      </ol>
+    </div>
+    <div class="columnsmaller fade-in">
+      <img id="profilepicture" src="images\Sources\website.jpg" alt="Tim Wai Khoo image">
+    </div>
+
+  </div>
+
+
+
+
+  <div id="Projectsdiv" class="section slide-in from-left">
+    <h2>Personal Projects</h2>
+    <p>These are some side-projects that I've built/am building in my spare time.</p>
+    <div class="fade-in">
+      <div class="row">
+        <div class="columneven">
+          <h3>Weather API data pipeline</h3>
+          <p>Built a data pipeline that calls data from an API, stores it in a Microsoft Azure Table Storage, and runs
+            an ongoing analysis.
+          </p>
+        </div>
+        <div class="columneven">
+          <h3><a class="textlink" href="https://github.com/timwaik/standard-chartered-marathon-analysis"
+              target="_blank">PDF table extraction</a>
+          </h3>
+          <p>Python script that extracts the results of the Standard Chartered Kuala Lumpur Marathon from multiple PDFs.
+            I also created some visualisations from the data that you can view <a class="textlink" href="#"
+              target="_blank">here</a>!</p>
+        </div>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="row">
+        <div class="columneven">
+          <h3><a class="textlink" href="https://github.com/timwaik/Mastermind-game" target="_blank">Text Based
+              Mastermind</a></h3>
+          <p>A text based game of Mastermind made with Python 3. Players attempt to guess the sequence of numbers
+            generated randomly. You're welcome to <a class="textlink" href="https://replit.com/@mitkay/Mastermind-game"
+              target="_blank">give it a try!</a></p>
+        </div>
+        <div class="columneven">
+          <h3><a class="textlink" href="https://github.com/timwaik/number-game" target="_blank">Speed Typing
+              Game</a></h3>
+          <p>A text based game, where players are scored based on how quickly they type a number.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="AboutMediv" class="section slide-in from-left">
+    <h2>About Me</h2>
+    <div id="educationdiv" class="fade-in" style="padding-top: 25px;">
+      <h3>My Education</h3>
+      <div class="row2">
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Highest Qualification</th>
+            </tr>
+            <tr>
+              <td><span id="Edu1"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Institute</th>
+            </tr>
+            <tr>
+              <td><span id="Edu2"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Final Year Project</th>
+            </tr>
+            <tr>
+              <!-- <td><span id="gradtime"></span> ago</td> -->
+              <td><span id="Edu3"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p>Having always had an affinity towards STEM subjects, I was privileged enough to be
+        able to pursue a Masters in Engineering, and graduate at one of the top <a class="textlink"
+          href="https://www.manchester.ac.uk/" target="_blank">universities</a> in the world.
+      </p>
+    </div>
+    <div id="workdiv" class="fade-in" style="padding-top: 25px;">
+      <h3>My 9-2-5</h3>
+      <div class="row2">
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Current Position</th>
+            </tr>
+            <tr>
+              <td><span id="Work1"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Current Project</th>
+            </tr>
+            <tr>
+              <td><span id="Work2"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>First Day of Work</th>
+            </tr>
+            <tr>
+              <td><span id="Work3"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p>I took my first job as an IT executive in 2019 at <a class="textlink" href="https://www.petronas.com/"
+          target="_blank">PETRONAS</a>, where I worked on data cleansing and data migration projects. As
+        a data engineer, my work revolves largely around (you guessed it) data. On a normal day-to-day, most of my tasks
+        can be summarised into the following:
+      </p>
+      <ul>
+        <li>Designing, building and maintaining data pipelines</li>
+        <li>Generating reports that gather insights for business users</li>
+      </ul>
+      <p> Interested in what I do and want to learn more? Here is a link to an <a class="textlink"
+          href="https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7"
+          target="_blank">article</a> on Medium that hopefully gives you a better understanding on the matter.</p>
+    </div>
+    <div id="personaldiv" class="fade-in" style="padding-top: 25px;">
+      <h3>Quick facts about me</h3>
+      <div class="row2">
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Favourite Animal</th>
+            </tr>
+            <tr>
+              <td><span id="Personal1"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Apple or Android</th>
+            </tr>
+            <tr>
+              <td><span id="Personal2"></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="columneven3">
+          <table>
+            <tr>
+              <th>Countries Visited</th>
+            </tr>
+            <tr>
+              <td><span id="Personal3"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p>On a more personal level, I'm pretty much your average Malaysian guy in his twenties; I love food, I play
+        badminton, and <a class="textlink" href="https://www.youtube.com/watch?v=eZoFK5PbeZM">Kau Ilhamku</a> is one of
+        my all-time favourite Malay songs.</p>
+      <p>I also enjoy spending time reading, running the occasional marathon, playing the drums, and geeking out on
+        things that interest me, such as personal finance and investing for Malaysians, the best way to iron a shirt,
+        and of course, the ever present question of:
+      </p>
+    </div>
+  </div>
+
+
+  <div id="Skillsdiv" class="section slide-in from-left">
+    <h2>Things I know/ Things I do</h2>
+
+    <div id="skills">
+      <div skill-type="language" skill-weight="4">
+        SQL
+      </div>
+      <div skill-type="language" skill-weight="2">
+        JavaScript
+      </div>
+      <div skill-type="language" skill-weight="3">
+        Python
+      </div>
+      <div skill-type="language" skill-weight="3">
+        HTML5
+      </div>
+      <div skill-type="language" skill-weight="2">
+        CSS3
+      </div>
+      <div skill-type="language" skill-weight="1">
+        R
+      </div>
+
+      <div skill-type="framework" skill-weight="3">
+        Agile
+      </div>
+      <div skill-type="framework" skill-weight="3">
+        Scrum
+      </div>
+
+      <div skill-type="tool" skill-weight="2">
+        Git
+      </div>
+      <div skill-type="tool" skill-weight="1">
+        MongoDB
+      </div>
+      <div skill-type="tool" skill-weight="4">
+        SAP Data Services
+      </div>
+
+      <div skill-type="tool" skill-weight="2">
+        MS Azure
+      </div>
+      <div skill-type="tool" skill-weight="3">
+        SAP Information Steward
+      </div>
+
+      <div skill-type="fun" skill-weight="1">
+        Pet Rabbits
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Eat Instant Noodles
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Obsess over Spiderman
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Watch Movies
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Watch Movies
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Take Evening Strolls
+      </div>
+      <div skill-type="fun" skill-weight="1">
+        Listen to Music
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Hide Gallery Section For Now
+  <div id="Gallerydiv" class="section slide-in from-left">
+    <h2>Gallery</h2>
+    <h3>My life in pictures</h3>
+    <div class="galleryrow">
+      <div class="gallerycolumn">
+        <img src="images/gallery/duo3.jpg" alt="">
+        <img src="images/gallery/group3.jpg" alt="">
+        <img src="images/gallery/me1.jpg" alt="">
+      </div>
+      <div class="gallerycolumn">
+        <img src="images/gallery/me2.jpg" alt="">
+        <img src="images/gallery/sheila9.jpg" alt="">
+
+      </div>
+      <div class="gallerycolumn">
+        <img src="images/gallery/me4.jpg" alt="">
+        <img src="images/gallery/sheila2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+  <!-- Hide Contact Section For Now
+  <div class="section slide-in from-left" style="min-height: 55%;">
+    <h2>Get in touch</h2>
+    <p>In case you missed the links at the beginning, here's how you can contact me.</p>
+    <div class="rowlinks">
+      <div class="columneven3 fade-in"><a class="imagelinks" href="mailto:hello@timkhoo.com" target="_blank">
+          <img class="contactimg" src="images\Sources\email.png" alt="Tim Wai's Email"></a></div>
+      <div class="columneven3 fade-in"><a class="imagelinks" href="https://www.linkedin.com/in/timwaik/"
+          target="_blank">
+          <img class="contactimg" src="images\Sources\linkedin.png" alt="Tim Wai's Linkedin"></a></div>
+      <div class="columneven3 fade-in"><a class="imagelinks" href="https://github.com/timwaik" target="_blank">
+          <img class="contactimg" src="images\Sources\github.png" alt="Tim Wai's Github"></a></div>
+    </div>
+  -->
+
+  </div>
+
+  <div class="sub-footer" id="Lastlydiv">
+    <h2>You've reached the end!</h2>
+    <p>Thanks for taking the time to view my website, I hope you have a wonderful <span id="day"></span> ahead of you!
+    </p>
+  </div>
+
+  <div class="footer">
+    <p id="footertext">Made with love <i>(and a lot of help from the internet)</i>. Tim Wai K <span id="year"></span>
+    </p>
+  </div>
+
+  <!-- TypeIt JS Script for Nav Button. -->
+  <script>
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  </script>
+  <!-- TypeIt JS Script for initial subheader. -->
+  <script src="https://unpkg.com/typeit@8.0.3/dist/index.umd.js"></script>
+  <script>
+    new TypeIt("#descriptors", {
+      speed: 125,
+      waitUntilVisible: true,
+      loop: true,
+      cursor: true
+    })
+      .pause(2750)
+      .type("Dta E", { delay: 300 })
+      .move(-4)
+      .type("a")
+      .move(null, { to: "END" })
+      .type("ngineer")
+      .pause(3000)
+      .delete(8)
+      .pause(400)
+      .type("Anlyst", { delay: 200 })
+      .move(-4)
+      .type("a")
+      .move(null, { to: "END" })
+      .pause(3000)
+      .delete(7)
+      .pause(400)
+      .type("Enthusiast")
+      .type("")
+      .pause(3000)
+      .go();
+  </script>
+  <!-- TypeIt JS Script for HTML, CSS, JavaScript, googling. -->
+  <script>
+    new TypeIt("#googleanimation", {
+      speed: 100,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1000
+    })
+      .pause(3000)
+      .type("Googling.", { delay: 300 })
+      .pause(2000)
+      .go();
+  </script>
+  <!-- JS script for date difference. -->
+  <script>
+    function dateDiff(startingDate, endingDate) {
+      var startDate = new Date(new Date(startingDate).toISOString().substr(0, 10));
+      if (!endingDate) {
+        endingDate = new Date().toISOString().substr(0, 10);    // need date in YYYY-MM-DD format
+      }
+      var endDate = new Date(endingDate);
+      if (startDate > endDate) {
+        var swap = startDate;
+        startDate = endDate;
+        endDate = swap;
+      }
+      var startYear = startDate.getFullYear();
+      var february = (startYear % 4 === 0 && startYear % 100 !== 0) || startYear % 400 === 0 ? 29 : 28;
+      var daysInMonth = [31, february, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+      var yearDiff = endDate.getFullYear() - startYear;
+      var monthDiff = endDate.getMonth() - startDate.getMonth();
+      if (monthDiff < 0) {
+        yearDiff--;
+        monthDiff += 12;
+      }
+      var dayDiff = endDate.getDate() - startDate.getDate();
+      if (dayDiff < 0) {
+        if (monthDiff > 0) {
+          monthDiff--;
+        } else {
+          yearDiff--;
+          monthDiff = 11;
+        }
+        dayDiff += daysInMonth[startDate.getMonth()];
+      }
+
+      return yearDiff + ' Years, ' + monthDiff + ' Month(s), ' + dayDiff + ' Day(s) ago';
+    }
+
+    var edu3 = dateDiff('2018-05-10');
+    var work3 = dateDiff('2019-02-18');
+
+  </script>
+  <!-- TypeIt JS Script for Education Tables. -->
+  <script>
+    new TypeIt("#Edu1", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 800
+    })
+      .type("MEng in Electrical and Electronic Engineering")
+      .go();
+    new TypeIt("#Edu2", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1200
+    })
+      .type("The University of Manchester")
+      .go();
+    new TypeIt("#Edu3", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1600
+    })
+      .type("Designing an Autonomous, Neutrally Buoyant UAV")
+      .go();
+  </script>
+  <!-- TypeIt JS Script for Work Tables. -->
+  <script>
+    new TypeIt("#Work1", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 800
+    })
+      .type("Data Engineer")
+      .go();
+    new TypeIt("#Work2", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1200
+    })
+      .type("Enterprise Data Migration")
+      .break()
+      .type("(SAP Customer Master)")
+      .go();
+    new TypeIt("#Work3", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1600
+    })
+      .type(work3)
+      .go();
+  </script>
+  <!-- TypeIt JS Script for Personal Tables. -->
+  <script>
+    new TypeIt("#Personal1", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 800
+    })
+      .type("Fluffy Rabbits &#x1F407")
+      .go();
+    new TypeIt("#Personal2", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1200
+    })
+      .type("Android &#129302")
+      .go();
+    new TypeIt("#Personal3", {
+      speed: 40,
+      waitUntilVisible: true,
+      loop: false,
+      cursor: false,
+      startDelay: 1600
+    })
+      .type("31 &#127759")
+      .go();
+  </script>
+  <!-- JS script for current day and year. -->
+  <script>
+    currentDate = new Date();
+    currentYear = new Date().toISOString().substr(0, 4);
+    const weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    currentDay = weekday[currentDate.getDay()];
+    document.getElementById("year").innerHTML = currentYear;
+    document.getElementById("day").innerHTML = currentDay;
+  </script>
+  <!-- JS script for fade-in on scroll. (Thank you Kevin Powell!) -->
+  <script>
+    const faders = document.querySelectorAll(".fade-in");
+    const sliders = document.querySelectorAll(".slide-in");
+
+    const appearOptions = {
+      threshold: 0,
+      rootMargin: "0px 0px -250px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (
+      entries,
+      appearOnScroll
+    ) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    },
+      appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+
+    sliders.forEach(slider => {
+      appearOnScroll.observe(slider);
+    });
+  </script>
 </body>
-
-</html>
