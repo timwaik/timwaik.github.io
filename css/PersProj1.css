@@ -436,13 +436,6 @@ p,  h2, h3, ul, ol, table  {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
 /*=================== Nav Bar END===================*/
 
 .fade-in {

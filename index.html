@@ -24,7 +24,6 @@
 
 <body>
   <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
       <a href="#Homediv" onclick="closeNav()">Home</a>
       <a href="#HelloWorlddiv" onclick="closeNav()">Hello World!</a>
@@ -36,8 +35,8 @@
   </div>
 
   <div id="navburger">
-    <span class="linktop" onclick="openNav()">
-      <img class="imagelinktop" src="images/iconmonstr-menu-1-120.png" alt="Tim Wai's Email"></span>
+    <span class="linktop" onclick="toggleNav()">
+      <img class="imagelinktop" src="images/iconmonstr-menu-1-120.png" alt="Nav Button"></span>
   </div>
   <div id="Homediv" class="header fade-in">
     <h1 id="name">{Tim Wai Khoo}</h1>
@@ -357,6 +356,19 @@
     }
     function openNav() {
       document.getElementById("myNav").style.width = "100%";
+    }
+    function toggleNav() {
+      var navwidth = document.getElementById("myNav").style.width;
+      if (navwidth == 0) {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      else if (navwidth == "0%") {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      else {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
     }
   </script>
   <!-- TypeIt JS Script for initial subheader. -->
