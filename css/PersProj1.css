@@ -77,6 +77,7 @@ li > p {
 
 #navburger {
   width: calc(50px + 0.6vw);
+  cursor: pointer;
   position: fixed;
   top: 10px;
   left: 15px;
